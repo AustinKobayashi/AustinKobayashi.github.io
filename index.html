@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/AustinKobayashi.github.io.json", {onProgress: UnityProgress});
+    </script>
   </head>
   <body>
     <div class="webgl-content">
@@ -18,10 +21,5 @@
         <div class="title">CircleShooter</div>
       </div>
     </div>
-    <script src="https://connect.facebook.net/en_US/fbinstant.6.13js"></script>
-    <script>FBInstant.initializeAsync().then(function() {
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json", {onProgress: UnityProgress});
-    });
-    </script>
   </body>
 </html>
